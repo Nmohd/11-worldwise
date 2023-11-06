@@ -1,9 +1,10 @@
-import AppNav from "../components/AppNav";
+import Sidebar from "../components/Sidebar";
+import styles from './AppLayout.module.css'
 
 const AppLayout = () => {
   return (
-    <div>
-      <AppNav />
+    <div m>
+      <Sidebar />
       <p>App</p>
     </div>
   );
