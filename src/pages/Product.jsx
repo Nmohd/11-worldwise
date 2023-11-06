@@ -1,8 +1,11 @@
 import styles from "./Product.module.css";
+import PageNav from "../components/PageNav";
+
 
 export default function Product() {
   return (
     <main className={styles.product}>
+          <PageNav />
       <section>
         <img
           src="img-1.jpg"
@@ -16,7 +19,7 @@ export default function Product() {
             soluta, molestiae nihil laborum, placeat debitis, laboriosam at fuga
             perspiciatis?
           </p>
-          <p>
+          <p> 
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis
             doloribus libero sunt expedita ratione iusto, magni, id sapiente
             sequi officiis et.

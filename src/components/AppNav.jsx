@@ -1,9 +1,7 @@
-import React from 'react'
+import styles from "./AppNav.module.css";
 
 const AppNav = () => {
-  return (
-    <div>AppNav</div>
-  )
-}
+  return <div className={styles.nav}>AppNav</div>;
+};
 
-export default AppNav
+export default AppNav;
