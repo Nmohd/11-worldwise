@@ -1,9 +1,9 @@
 import Sidebar from "../components/Sidebar";
-import styles from './AppLayout.module.css'
+import styles from "./AppLayout.module.css";
 
 const AppLayout = () => {
   return (
-    <div m>
+    <div className={styles.app}>
       <Sidebar />
       <p>App</p>
     </div>
