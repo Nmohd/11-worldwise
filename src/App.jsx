@@ -10,7 +10,7 @@ import Homepage from "./pages/HomePage";
 import CityList from "./components/CityList";
 
 function App() {
-  const [cities, setCities] = useState({});
+  const [cities, setCities] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
   const BASE_URL =
@@ -22,15 +22,17 @@ function App() {
         setIsLoading(true);
         const res = await fetch(`${BASE_URL}`);
         const data = await res.json();
-        setCities(data);
+        setCities(data.cities);
       } catch {
-        alert("There ws an error loading data...");
+        alert("There was an error loading data...");
       } finally {
         setIsLoading(false);
       }
     }
     fetchCities();
   }, []);
+
+
 
   return (
     <BrowserRouter>
