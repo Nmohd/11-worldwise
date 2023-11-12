@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams,useSearchParams } from "react-router-dom";
 import styles from "./City.module.css";
 
 const formatDate = (date) =>
@@ -9,11 +9,25 @@ const formatDate = (date) =>
   }).format(new Date(date));
 
 const City = () => {
-  const {id} = useParams();
+  const [searchParams, setSearchParams] = useSearchParams();
+
+  const lat = searchParams.get("lat");
+  const lng = searchParams.get("lng");
+  
+  const { id } = useParams();
   // console.log(x);
   // const { id } = useParams();
 
-  return <h3 >City{id}</h3>;
+  return (
+    <div>
+      {" "}
+      <h1>Map</h1>
+      <h1>
+        Position: {lat}, {lng}
+      </h1>
+      ;
+    </div>
+  );
 };
 
 export default City;
