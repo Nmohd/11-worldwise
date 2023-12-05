@@ -4,7 +4,10 @@ import Message from "./Message";
 import styles from "./CountryList.module.css";
 import CountryItem from "./CountryItem";
 
-const CountriesList = ({ cities, isLoading }) => {
+import { useCities } from "../contexts/CitiesContext";
+
+const CountriesList = () => {
+  const { cities, isLoading } = useCities();
   if (isLoading) return <Spinner />;
 
   if (!cities.length)
@@ -20,7 +23,7 @@ const CountriesList = ({ cities, isLoading }) => {
   return (
     <ul className={styles.countryList}>
       {countries.map((country) => (
-        <CountryItem country={country} key={country.country}/>
+        <CountryItem country={country} key={country.country} />
       ))}
     </ul>
   );
