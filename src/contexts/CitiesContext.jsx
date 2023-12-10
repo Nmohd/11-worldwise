@@ -7,7 +7,7 @@ function CitiesProvider({ children }) {
   const [isLoading, setIsLoading] = useState(false);
   const [currentCity, setCurrentCity] = useState({});
 
-  const BASE_URL = "http://localhost:3000";
+  const BASE_URL = "http://localhost:9000";
 
   useEffect(() => {
     async function fetchCities() {
@@ -32,7 +32,6 @@ function CitiesProvider({ children }) {
       const res = await fetch(`${BASE_URL}/cities/${id}`);
       const data = await res.json();
       setCurrentCity(data);
-      // console.log(data);
     } catch {
       alert("There was an error loading data...");
     } finally {
@@ -56,7 +55,7 @@ function CitiesProvider({ children }) {
 function useCities() {
   const context = useContext(CitiesContext);
   if (context === undefined)
-    throw new Error("CitiesContext was used outside the CitiesProvider");
+    throw new Error("Cities Context was used outside the CitiesProvider");
   return context;
 }
 
