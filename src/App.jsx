@@ -12,7 +12,7 @@ import CountriesList from "./components/CountriesList";
 import City from "./components/City";
 import Form from "./components/Form";
 import { CitiesProvider } from "./contexts/CitiesContext";
-import { useContext } from "react";
+// import { useContext } from "react";
 
 
 function App() {
