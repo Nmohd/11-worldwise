@@ -7,7 +7,8 @@ import {
 } from "react";
 import { json } from "react-router-dom";
 
-const BASE_URL = "http://localhost:9000";
+// const BASE_URL = "http://localhost:9000";
+const BASE_URL = "https://world-wise-app.onrender.com";
 
 const CitiesContext = createContext();
 

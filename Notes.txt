@@ -92,6 +92,28 @@ Types of state (domain) : UI vs remote
   ** Theme, list filters, form data, etc.
   ** Usually synchronous and stroed in the application. 
 
+-_________________________________________________________________
+  
+  PERFORMANCE OPTIMIZATION TOOLS IN REACT
+
+  1.Prevent wasted renders
+   *Memo 
+   *useMemo
+   *useCallback
+   *Passing elements as children or regular prop
+   
+  2. Improve app speed/responsiveness
+   *useMemo
+   *useCallback
+   *useTransition
+   
+  3. Reduce Bundle size
+   *Using fewer 3rd-party packages
+   *Code splitting and lazy loading
+
+
+  _________________________________________________________________
+
 
 
 
