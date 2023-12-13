@@ -131,6 +131,13 @@ as befor, the previously sved reult will be returned, without executing the fucn
 Why do we use different contexts for different works. Like post context and searchContext.
 It is because if post context updates it also updates the searchContext, which is bad for Optimization of the app. 
 (Basically to avoid wasted renders we dont combine contexts and keep them separate) 
+_________________________________________________________________________________________________
+Bundle and Code splitting
+ *Bundle: JS file containing the entire application code. Downloading the bundle will load the entire app at once, turning it into a SPA.
+ *Bundle Size :  Amount of JS users have to download to start using th e app. One of the most important things to be optimized, so that the budnle takes less time to download.
+ *Code Splitting : Splitting bundle into multiple parts that can be downloaded over time ("Lazy Loading")
+_________________________________________________________________________________________________
+
 
 
 
