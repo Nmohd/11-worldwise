@@ -113,7 +113,24 @@ Types of state (domain) : UI vs remote
 
 
   _________________________________________________________________
+Memo function (Memoization)
 
+*Optimization technique that executes a pure function once, and saves the result in memory. If we try to execute the function again with the same arguments
+as befor, the previously sved reult will be returned, without executing the fucntion again.
+
+*In javascript two objects or functions that look the same are actually differen ({} != {})
+
+ For solving this problem we have useMemo and useCallback hook. 
+ This two functions have a dependency array like useeffect. wheneever one dependency change the value will be re-created.
+
+
+* Setter functions have stable identity in react
+
+*** Read difference between useMemo and useCallback functions ***
+
+Why do we use different contexts for different works. Like post context and searchContext.
+It is because if post context updates it also updates the searchContext, which is bad for Optimization of the app. 
+(Basically to avoid wasted renders we dont combine contexts and keep them separate) 
 
 
 
