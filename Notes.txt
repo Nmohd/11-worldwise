@@ -138,7 +138,12 @@ Bundle and Code splitting
  *Code Splitting : Splitting bundle into multiple parts that can be downloaded over time ("Lazy Loading")
 _________________________________________________________________________________________________
 
+UseEffect Rules and Best Practices
+* Include all reactive values in the dependency array.
+* Use eslint rule (package to see the dependency)
+* Do not use objects and arrays as dependencies.
 
+____________________________________________________________________________________________________
 
 
 
