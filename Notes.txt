@@ -144,7 +144,20 @@ UseEffect Rules and Best Practices
 * Do not use objects and arrays as dependencies.
 
 ____________________________________________________________________________________________________
+Redux
+ * 3rd- Party library to manage global state.
+ * Standalone library, but easy to integrate with react apps using react- redux library.
+ * All globalstate is stored in one globally accessible store which is easy to update using "actions" (like useReducer).
+ * When store is updated all consuming componenets re-render. 
+ * It is conceptually similar to using the Context api ++ useReducer.
+ * Two "version " : (1) Classic Redux, (2) Modern Redux Toolkit
 
+Mechanism of the useReducer Hook 
+ * Event Handler in component ----------> dispatch -------> reducer(current state) ---- > Next State ----> Re-render.
 
+ Mechanism of the Redux Cycle
+ * Event Handler in component ----------> Action Creator Function ----------> dispatch -------> Store(global state, more reducer) ---- > Next State ----> Re-render.
+
+____________________________________________________________________________________________________
 
 
